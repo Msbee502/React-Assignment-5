@@ -1,0 +1,91 @@
+
+.navContainer {
+    background-color: #fadaf9;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .navbar {
+    font-family: "Source Sans 3", sans-serif;
+    /* justify-content: center; */
+       
+  }
+  
+  .list {
+    /* display: flex; */
+    
+  } 
+  
+  .navLink {
+    list-style: none;
+    font-family: "Montserrat", sans-serif;
+    color: black;
+    font-size: 16px;
+    margin: 20px;
+    padding: 20px;
+    
+  }
+  a {
+    color: black; 
+    text-decoration: none;
+  }
+  
+  a:hover {
+    cursor: pointer;
+    color: orange;
+  }
+  
+  /* 
+  .navbar{
+    max-width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .navContainer{
+    max-width: 1400px;
+      display: flex;
+      justify-content: space-between;
+      background-color: #EEECDE;
+      padding: 10px;   
+      max-width: 100%;
+      
+  }
+  
+  .navLink {
+      color: #343a40;
+      text-decoration: none;
+      width: 100%;
+      z-index: 100;
+      font-family: "Montserrat", sans-serif;
+      font-size: 20px;
+  }
+  .list {
+      list-style-type: none;
+      max-width: 1400px;
+      display: flex;
+      justify-content: space-between;
+      background-color: #EEECDE;
+      padding: 10px;   
+      
+  }
+  
+  .navLink a { 
+      text-decoration: none;
+      
+  } */
+  
+    /* // <uniquifier>: Use a unique and descriptive class name
+  // <weight>: Use a value from 100 to 900
+  
+  .montserrat-<uniquifier> {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
+    } */
