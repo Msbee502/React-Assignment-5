@@ -1,5 +1,7 @@
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import React from 'react';
 import Navbar from './pages/navbar.jsx';
+import { Link} from 'react-router-dom';
 
 
 
@@ -11,13 +13,14 @@ function App () {
       <Routes>
       <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="*" element={<Gallery/>} />
-        <Route path="/counter" element={<Counter/>} />
-        <Route path="/color" element={<Color/>} />
-        <Route path="/practise" element={<Practise/>} />
-        <Route path="/todoList" element={<TodoList/>} />
+        <Route path="/video" element={<Video/>} />
+        <Route path="/images" element={<Images/>} />
+        <Route path="/maps" element={<Maps/>} />
+        <Route path="/products" element={<Products/>} />
+        <Route path="/news" element={<News/>} />
+        <Route path="/signIn" element={<Sign in/>} />
       </Routes>
-      <Footer></Footer>
+    
       </BrowserRouter>
 
     </div>

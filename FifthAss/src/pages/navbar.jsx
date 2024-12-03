@@ -6,26 +6,26 @@ function Navbar() {
     <header>
       <div className="navContainer">
         <li className="navLink">
-          <Link to="/Logo">Seeker</Link>
+          <Link to="/">Seeker</Link>
         </li>
         <nav className="navbar">
           <ul className="list">
             <li className="navLink">
-              <Link to="/Images">Images</Link>
+              <Link to="/videos">Videos</Link>
             </li>
             <li className="navLink">
-              <Link to="/Video">Video</Link>
+              <Link to="/images">Images</Link>
             </li>
             <li className="navLink">
-              <Link to="/Map">Map</Link>
+              <Link to="/maps">Map</Link>
             </li>
             <li className="navLink">
-              <Link to="/Products">Products</Link>
+              <Link to="/products">Products</Link>
             </li>
           </ul>
         </nav>
         <li className="navLink">
-          <Link to="/Signin">Sign in</Link>
+          <Link to="/signIn">SignIn</Link>
         </li>
       </div>
     </header>
