@@ -1,43 +1,35 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Axios from "axios";
 import "../styles/home.css";
 
 function Home() {
-  // State to hold the input text and translated text
-  const [translate, setTranslate] = useState("");
-  const [originalText, setOriginalText] = useState(""); // Track the input text
+  const [search, setSearch] = useState("");
+  const [data, setData] = useState([]);
 
-  // Function to call the translation API
-  const translateText = () => {
-    Axios.get(`https://api.funtranslations.com/translate/minion.json?text=${originalText}`)
-      .then((res) => {
-        // Update the translated text
-        setTranslate(res.data.contents.translated);
-      })
-      .catch((err) => {
-        console.error("Error during translation:", err);
-      });
-  };
+  useEffect(() => {
+    Axios.get("https://wizard-world-api.herokuapp.com/Houses").then((res) => {
+      setData(res.data);
+    });
+  }, []);
 
   return (
-    <div className="formMinion">
-      {/* Input field for the original text */}
-      <div>
-        <input className="input"
-          type="text" 
-          placeholder="Type the text you wish to translate"
-          value={originalText} 
-          onChange={(e) => setOriginalText(e.target.value)} // Update originalText state as user types
-        />
-      </div>
-
-      {/* Button to trigger the translation */}
-      <button onClick={translateText}>Translate to Minion</button>
-
-      {/* Display the translated text */}
-      <div className="translatedText">Translated Text: {translate}</div>
+    <div>
+      <input type="text" 
+      placeholder="Enter your house" 
+      value={search} 
+      onChange={(e) => setSearch(e.target.value)}
+      />
+      {data.filter((item) =>{
+        return search.toLowerCase() === "" ? item : item.name.toLowercase().includes(search)
+      }).map((item, index) => (
+        <ul key={index}>
+          <li>House name{item.name}</li>
+          <li>Founder {item.founder}</li>
+          <li>Animal {item.animal}</li>
+        </ul>
+      ))}
     </div>
-  );
+  );  
 }
-
-export default Home;
+  
+  export default Home;
