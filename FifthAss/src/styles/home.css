@@ -1,4 +1,78 @@
-body{
-    min-height: 100vh;
 
-}
+.search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    margin-top: 50px;
+  }
+  
+    .search-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  .search-field {
+    width: 400px;
+    height: 40px;
+    padding: 0 10px;
+    border: 2px solid #d7a7f9;
+    border-radius: 25px;
+    margin-top: 2px;
+    outline: none;
+    font-size: 16px;
+    background-color: #f9e8ff;
+    color: #a66dcb;
+    /* background-image: url('/path/to/your/favicon.ico'); /* 
+    /* background-position: 10px center; */
+    /* background-repeat: no-repeat;
+    background-size: 24px 24px;  */
+  }
+  
+  /* Search button styling */
+  .search-button {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    transform: translateY(-50%);
+    padding: 8px 12px;
+    background-color: #bf51f2;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    
+  }
+  
+  .search-button:hover {
+    background-color: #a140cc;
+  }
+   
+  .suggestions {
+    margin-top: 20px;
+    width: 25%;
+    background-color: #f9e8ff;
+    border: 2px solid #d7a7f9;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: #a66dcb;
+    font-size: 16px;
+  }
+  
+  /* .suggestions ul {
+    width: 110%;
+    list-style-type: none;
+    padding: 0;
+  }
+   */
+  .suggestions li {
+    margin: 5px 0;
+  }
+  
+  /* <FontAwesomeIcon icon="fa-solid fa-magnifying-glass" /> */
