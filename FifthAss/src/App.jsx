@@ -24,7 +24,7 @@ function App () {
         <Route path="/maps" element={<Maps/>} />
         <Route path="/products" element={<Products/>} />
         <Route path="/news" element={<News/>} />
-        <Route path="/signIn" element={<Sign in/>} />
+        <Route path="/signIn" element={<SignIn/>} />
       </Routes>
     
       </BrowserRouter>

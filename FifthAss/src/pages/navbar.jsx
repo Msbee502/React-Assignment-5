@@ -3,32 +3,23 @@ import "../styles/navbar.css";
 
 function Navbar() {
   return (
-    <header>
-      <div className="navContainer">
-        <li className="navLink">
-          <Link to="/">Seeker</Link>
-        </li>
-        <nav className="navbar">
-          <ul className="list">
-            <li className="navLink">
-              <Link to="/videos">Videos</Link>
-            </li>
-            <li className="navLink">
-              <Link to="/images">Images</Link>
-            </li>
-            <li className="navLink">
-              <Link to="/maps">Map</Link>
-            </li>
-            <li className="navLink">
-              <Link to="/products">Products</Link>
-            </li>
-          </ul>
-        </nav>
-        <li className="navLink">
-          <Link to="/signIn">SignIn</Link>
-        </li>
-      </div>
-    </header>
+  
+      <header>
+      <div className="navContainer">   
+          <nav className="navbar">
+              <ul className="list">
+                  <li className="navLink"><Link to="/">Home</Link></li>
+                  <li className="navLink"><Link to="/Video">Video</Link></li>
+                  <li className="navLink"><Link to="/Images">Images</Link></li>
+                  <li className="navLink"><Link to="/News">News</Link></li>
+                  <li className="navLink"><Link to="/Products">Products</Link></li>
+                  <li className="navLink"><Link to="/Maps">Maps</Link></li>
+                  <li className="navLink"><Link to="/SignIn">Sign in</Link></li>
+                 
+              </ul>
+       </nav>
+  </div>
+  </header>
   );
 }
 
