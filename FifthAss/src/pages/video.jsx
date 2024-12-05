@@ -1,7 +1,7 @@
 
 function Video () {
 
-    return <div>Home</div>
+    return <div>Video</div>
 
 }
 

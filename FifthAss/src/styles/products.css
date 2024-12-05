@@ -1,0 +1,31 @@
+body{
+    background-color: #fdd5fb;
+}
+
+.formMinion{
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    width: 250px;
+    margin: 20px; 
+    padding: 10px;
+}
+button{
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #5e045b;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.translatedText{
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+}

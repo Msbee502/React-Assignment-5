@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Axios from "axios";
+import "../styles/home.css";
 
 function Home() {
   // State to hold the input text and translated text
@@ -19,10 +20,10 @@ function Home() {
   };
 
   return (
-    <div>
+    <div className="formMinion">
       {/* Input field for the original text */}
       <div>
-        <input 
+        <input className="input"
           type="text" 
           placeholder="Type the text you wish to translate"
           value={originalText} 
@@ -34,7 +35,7 @@ function Home() {
       <button onClick={translateText}>Translate to Minion</button>
 
       {/* Display the translated text */}
-      <div>Translated Text: {translate}</div>
+      <div className="translatedText">Translated Text: {translate}</div>
     </div>
   );
 }
